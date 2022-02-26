@@ -1,0 +1,65 @@
+:root {
+    --element-border: .02rem solid magenta;
+}
+
+body {
+    /* background-color: antiquewhite; */
+    padding: 0;
+    margin: 0;
+}
+
+.main-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: aqua;
+    height: 3.5rem;
+    width: 100%;
+}
+
+.navbar p {
+    padding: 0;
+    margin: .5rem 4.5rem;
+    font-size: 1.7rem;
+}
+
+.input-component {
+    background-color: azure;
+    text-align: center;
+    /* border: var(--element-border); */
+}
+
+.file-upload-form {
+    /* border: var(--element-border); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem;
+}
+
+.file-upload-form input {
+    /* border: var(--element-border); */
+    padding: .2rem;
+    margin: 1rem;
+}
+
+.upload-button {
+    width: 30%;
+    padding: .2rem;
+}
+
+@media (min-width: 720px) {
+    .input-component {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .upload-button {
+        width: 20%;
+    }
+}
